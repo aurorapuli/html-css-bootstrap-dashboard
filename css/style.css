@@ -7,3 +7,32 @@
 :root{
     font-size: 14px;
 }
+
+
+/* DEFAULT */
+
+header{
+    height: 80px;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+}
+
+.my-contenitore{
+    padding-top: 80px;
+    height: 100vh;
+    background-color: orange;
+}
+
+nav{
+    width: 150px;
+    background-color: yellow;
+   
+}
+
+main{
+    width: 100%;
+    background-color: blue;
+    overflow-y: auto;
+   
+}
