@@ -9,30 +9,57 @@
 }
 
 
-/* DEFAULT */
+
+/* Stili header */
 
 header{
-    height: 80px;
-    background-color: red;
+    height: 60px;
     position: fixed;
     width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.my-searchbar{
+    background-color: #e5e5e5;
+}
+
+.my-icons{
+    color: rgb(70, 70, 70);
 }
 
 .my-contenitore{
-    padding-top: 80px;
+    padding-top: 60px;
     height: 100vh;
-    background-color: orange;
 }
 
+.img img{
+    width: 100%;
+}
+/* stili nav */
 nav{
-    width: 150px;
-    background-color: yellow;
+    width: 158px;
+    background-color: #0a2238;
    
 }
+
+nav .list-group-item{
+    color: white;
+    background-color: #0a2238;
+    border: none;
+    font-size: 17px;
+}
+
+nav .list-group-item:hover{
+    background-color: #b3b3b3;
+    color: white;
+}
+
+/* stili main */
 
 main{
     width: 100%;
-    background-color: blue;
     overflow-y: auto;
-   
+    background-color: #f8f9fa;
 }
+
