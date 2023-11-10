@@ -6,6 +6,7 @@
 
 :root{
     font-size: 14px;
+    font-family: 'Roboto', sans-serif; 
 }
 
 
@@ -61,5 +62,15 @@ main{
     width: 100%;
     overflow-y: auto;
     background-color: #f8f9fa;
+}
+
+
+#dashboard{
+    background-color: #1b72e8;
+    color: white;
+}
+
+#dashboard .badge{
+    background-color:#165aba ;
 }
 
