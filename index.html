@@ -35,8 +35,7 @@
                     </div>
                     <div>
                         <a class="pe-auto " href="#"><i class="fa-solid fa-bell my-bell px-2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Profilo Fatturazione Logout"></i></a>
-                    </div>
-                    
+                    </div> 
                 </div>
             </div>
         </div>
@@ -44,7 +43,7 @@
 
     <!-- inizio nav -->
     <div class=" my-contenitore d-flex">
-        <nav class="p-3 d-flex flex-column justify-content-between">
+        <nav class="py-3 px-1 d-flex flex-column justify-content-between">
             <div class="list-group" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action d-flex align-items-center" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i class="fa-solid fa-house pe-3"></i><div class="d-none d-md-block">Home</div></a>
                 <a class="list-group-item list-group-item-action d-flex align-items-center" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages"><i class="fa-solid fa-chart-simple pe-3"></i><div class="d-none d-md-block" >Stats</div></a>
@@ -114,16 +113,16 @@
             <div id="tables" class="p-3">
                 <div class="row">
                     <div class=" col-12 col-lg-8">
-                        <div class="border border-secondary rounded-3">
+                        <div class="border border-$gray-200 rounded-3">
                             <h2 class="my-tables-background p-2">Prossime classe</h2>
                             <table class="table  table-hover text-center p-2">
                                 <thead>
                                   <tr>
                                     <th class="col-lg-7 text-start" scope="col">Nome</th>
-                                    <th scope="col-lg-2">Data Inizio</th>
-                                    <th scope="col-lg-1">ROI</th>
-                                    <th scope="col-lg-1">stato</th>
-                                    <th scope="col-lg-1">Azioni</th>
+                                    <th class="col" scope="col">Data Inizio</th>
+                                    <th class="col" scope="col">ROI</th>
+                                    <th class="col" scope="col">stato</th>
+                                    <th class="col" scope="col">Azioni</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -186,7 +185,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="border border-secondary rounded-3 mt-4">
+                        <div id="faq" class="border borde-$gray-200 rounded-3 my-4">
                             <h2 class="my-tables-background p-2">F.A.Q</h2>
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
@@ -229,21 +228,53 @@
                                     </div>
                                   </div>
                                 </div>
-                            </div>
-                                                        
-                        </div>
-                        
+                            </div>                             
+                        </div> 
                     </div>
                     <div class="col-12 col-lg-4">
-                        <div class="border border-secondary rounded-3 mt-4">
+                        <div id="todo"  class="border border-$gray-200 rounded-3">
                             <h2 class="my-tables-background p-2">Todo</h2>
-                                                        
+                            <div class="border border-$gray-200 rounded-3 m-2 p-2">
+                                <div class="form-check py-1">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Kickoff nuove classi
+                                    </label>
+                                </div>
+                                <div class="form-check py-1">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Lezione su Bootstrap 5 in classe #75
+                                    </label>
+                                </div>
+                                <div class="py-1">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                      Controllare username github studenti
+                                    </label>
+                                </div>
+                            </div>                             
                         </div>
-
+                        <div class="border border-$gray-200 rounded-3 my-4">
+                            <div class="border border-$gray-200 rounded-3 m-2 p-2">
+                                <div class="img">
+                                    <img src="img/stats.jpeg" alt="statistiche">
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <h4>Utenti attivi</h4>
+                                        <div>Lista degli studenti attivi in piattaforma nell'ultimo mese</div>
+                                    </li>
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    <li class="list-group-item"> <a href="#" class="stretched-link">Visualizza report approfondito</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
-                  
-
             </div>
         </main>
     </div>
