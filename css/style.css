@@ -41,6 +41,10 @@ header{
     width: 100%;
 }
 
+.my-logo-small{
+    max-width: 50px;
+}
+
 .my-bell{
     color: #ff8f05;
 }
@@ -92,6 +96,20 @@ main{
     border: 1px solid white;
     border-radius: 5px;
 }
+#dashboard .form-label, #dashboard .form-check-label{
+    color: black;
+}
+
+#dashboard .offcanvas-end{
+    width: 100%;
+}
+
+@media all and (min-width:992px){
+    #dashboard .offcanvas-end{
+        width: 700px;
+    }
+}
+
 
 
 /* stili tables */
