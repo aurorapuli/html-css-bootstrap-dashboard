@@ -17,17 +17,17 @@
     <header class="d-flex align-items-center">
         <div class="container-fluid">
             <div class="row  align-items-center">
-                <div class="col-1 img">
+                <div class="col-auto img">
                     <img class="d-none d-md-block" src="img/logo.svg" alt="logo">
                     <img class="d-md-none" src="img/mobile-logo.png" alt="mobile logo">
                 </div>
-                <div class="col-10">
+                <div class="col">
                     <div class="input-group">
                         <span class="input-group-text my-searchbar"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="text" class="form-control my-searchbar" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
-                <div class="col-1 d-flex align-items-center ">
+                <div class="col-auto d-flex align-items-center ">
                     <div class="my-icons d-flex flex-nowrap d-none d-md-block">
                         <i class="fa-solid fa-bars "></i>
                         <i class="fa-solid fa-circle-question px-2"></i>
@@ -59,7 +59,7 @@
         <main>
             <div id="dashboard" class="p-4 ">
                 <div class="row d-md-flex">
-                    <div class=" mb-sm-3 col-md-4 col-lg-6 ">
+                    <div class=" mb-sm-3 order-2 order-md-1 col-md-4 col-lg-6 ">
                         <div>
                            <h2 class="d-inline">Boolean</h2>
                            <span class="badge rounded-pill">Piano Blaze</span> 
@@ -73,11 +73,11 @@
                             <span class="badge rounded-pill d-lg-none">+</span> 
                         </div>
                     </div>
-                    <div class="mb-sm-3 col-md-4 col-lg-3">
+                    <div class="mb-sm-3 order-3 order-md-2 col-md-4 col-lg-3">
                         <div>Studenti online negli ultimi 30 anni</div>
                         <h2>125</h2>
                     </div>
-                    <div class="mb-sm-3 col-md-4 col-lg-3 text-end d-flex  align-items-center align-self-start">
+                    <div class="mb-sm-3 order-1 order-md-3 col-md-4 col-lg-3 text-end d-flex  align-items-center align-self-start">
                         <div>Nuovo Studente</div>
                         <div>
                             <a class="mx-3" href="#" data-bs-toggle="dropdown" aria-expanded="false">+</a>  
@@ -108,7 +108,91 @@
                         </div>
                     </div>
                 </div>
-                
+            </div>
+
+            <!-- inizio tabelle -->
+            <div id="tables" class="p-3">
+                <div class="row">
+                    <div class=" col-12 col-md-8">
+                        <div class="border border-secondary rounded-3">
+                            <h2 class="my-tables-background p-2">Prossime classe</h2>
+                            <table class="table  table-hover text-center p-2">
+                                <thead>
+                                  <tr>
+                                    <th class="col-7 text-start" scope="col">Nome</th>
+                                    <th scope="col-2">Data Inizio</th>
+                                    <th scope="col-1">ROI</th>
+                                    <th scope="col-1">stato</th>
+                                    <th scope="col-1">Azioni</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th class="text-start" scope="row"><button type="button" class="btn btn-danger btn-sm rounded-circle me-2"><i class="fa-solid fa-code"></i></button> Classe 75</th>
+                                    <td>15 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge bg-success">Done</span></td>
+                                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button><button type="button" class="btn btn-outline-secondary btn-sm mx-1"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <th class="text-start" scope="row"><button type="button" class="btn btn-danger btn-sm rounded-circle me-2"><i class="fa-solid fa-code"></i></button> Classe 76</th>
+                                    <td>16 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge bg-success">Done</span></td>
+                                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button><button type="button" class="btn btn-outline-secondary btn-sm mx-1"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <th class="text-start" scope="row"><button type="button" class="btn btn-danger btn-sm rounded-circle me-2"><i class="fa-solid fa-code"></i></button> Classe 77</th>
+                                    <td>17 Feb 2021</td>
+                                   <td>20%</td>
+                                    <td><span class="badge bg-warning text-dark">Process</span></td>
+                                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button><button type="button" class="btn btn-outline-secondary btn-sm mx-1"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <th class="text-start" scope="row"><button type="button" class="btn btn-danger btn-sm rounded-circle me-2"><i class="fa-solid fa-code"></i></button> Classe 78</th>
+                                    <td>18 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge bg-success">Done</span></td>
+                                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button><button type="button" class="btn btn-outline-secondary btn-sm mx-1"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <th class="text-start" scope="row"><button type="button" class="btn btn-danger btn-sm rounded-circle me-2"><i class="fa-solid fa-code"></i></button> Classe 79</th>
+                                    <td>19 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge bg-danger">failed</span></td>
+                                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button><button type="button" class="btn btn-outline-secondary btn-sm mx-1"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <th class="text-start" scope="row"><button type="button" class="btn btn-danger btn-sm rounded-circle me-2"><i class="fa-solid fa-code"></i></button> Classe 80</th>
+                                    <td>20 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge bg-success">Done</span></td>
+                                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button><button type="button" class="btn btn-outline-secondary btn-sm mx-1"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <th class="text-start" scope="row"><button type="button" class="btn btn-danger btn-sm rounded-circle me-2"><i class="fa-solid fa-code"></i></button> Classe 81</th>
+                                    <td>21 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge bg-danger">failed</span></td>
+                                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button><button type="button" class="btn btn-outline-secondary btn-sm mx-1"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <th class="text-start" scope="row"><button type="button" class="btn btn-danger btn-sm rounded-circle me-2"><i class="fa-solid fa-code"></i></button> Classe 82</th>
+                                    <td>22 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge bg-success">Done</span></td>
+                                    <td><button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pen"></i></button><button type="button" class="btn btn-outline-secondary btn-sm mx-1"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                 
+                              </table>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4"></div>
+                </div>
+                  
+
             </div>
         </main>
     </div>

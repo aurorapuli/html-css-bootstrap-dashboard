@@ -92,3 +92,15 @@ main{
     border: 1px solid white;
     border-radius: 5px;
 }
+
+
+/* stili tables */
+
+#tables{
+ background-color: #f8f9fa;
+}
+
+.my-tables-background{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid grey;
+}
